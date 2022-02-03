@@ -1,0 +1,7 @@
+
+
+node_modules/
+
+03_BaseNodeJS/salida/*.txt
+
+.idea/

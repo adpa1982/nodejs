@@ -1,11 +1,9 @@
 
 
 node_modules/
-
 03_BaseNodeJS/salida/*.txt
-
 .idea/
-
 .env
-
-7z
+.7z
+.zip
+.rar

@@ -1,0 +1,13 @@
+USER=user_node
+PASS=Pb0TORgd2UPNkexZ
+
+--Post: http://localhost:3000/api/usuarios
+{
+    "nombre": "AD",
+    "google": true,
+    "correo": "ad@gmail.com",
+    "password": "123456",
+    "rol": "ADMIN_ROLE",
+    "estado": true
+
+}

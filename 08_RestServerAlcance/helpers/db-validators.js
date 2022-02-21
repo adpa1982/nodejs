@@ -31,7 +31,7 @@ const existeUsuarioPorId = async( id ) => {
  * Categorias
  */
 const existeCategoriaPorId = async( id ) => {
-    // Verificar si el correo existe
+    // Verificar si la categoria existe
     const existeCategoria = await Categoria.findById(id);
     if ( !existeCategoria ) {
         throw new Error(`El id no existe ${ id }`);
@@ -42,7 +42,7 @@ const existeCategoriaPorId = async( id ) => {
  * Productos
  */
 const existeProductoPorId = async( id ) => {
-    // Verificar si el correo existe
+    // Verificar si el producto existe
     const existeProducto = await Producto.findById(id);
     if ( !existeProducto ) {
         throw new Error(`El id no existe ${ id }`);

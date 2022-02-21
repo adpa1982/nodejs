@@ -1,9 +1,10 @@
 const { Router } = require('express');
 
-
-const { login } = require('../controllers/auth');
 const { createRulesLogin } = require('../controllers/request/rules-auth');
+const { createRulesGoogle } = require('../controllers/request/rules-google');
 const { validarCampos } = require('../middlewares/validar-campo');
+
+const { login, googleSignin } = require('../controllers/auth');
 
 const router = Router();
 
@@ -13,6 +14,10 @@ router.post('/login', [
     validarCampos
 ], login );
 
+router.post('/google',[
+    createRulesGoogle(),
+    validarCampos
+], googleSignin );
 
 
 module.exports = router;

@@ -1,5 +1,8 @@
 const { check } = require('express-validator');
-const { esRoleValido, emailExiste, existeUsuarioPorId } = require('../../helpers/db-validators');
+
+const { esRoleValido,
+        emailExiste,
+        existeUsuarioPorId } = require('../../helpers');
 
 const createRulesUsuario = () => {
     return [

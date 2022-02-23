@@ -31,10 +31,10 @@ const ProductoSchema = Schema({
 });
 
 
-/*ProductoSchema.methods.toJSON = function() {
-    const { __v, estado, ...data  } = this.toObject();
+ProductoSchema.methods.toJSON = function() {
+    const { __v, ...data  } = this.toObject();
     return data;
-}*/
+}
 
 
 module.exports = model( 'Producto', ProductoSchema );
